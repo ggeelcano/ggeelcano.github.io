@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G&amp;G Elcano - 217 demos web personalizadas - Bizkaia</title>
+<meta name="description" content="Índice de 217 webs demo generadas por G&amp;G Elcano para negocios locales de Bizkaia."/>
+<meta name="robots" content="noindex"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#e5e5e5;padding:24px;line-height:1.5}
+.container{max-width:1200px;margin:0 auto}
+h1{font-size:32px;margin-bottom:4px;color:#fff}
+h1 span{color:#22c55e}
+.sub{color:#888;margin-bottom:24px;font-size:14px}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.stat{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);border-radius:10px;padding:10px 16px;font-size:13px}
+.stat b{color:#22c55e;font-size:18px;display:block}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;padding:14px;background:rgba(255,255,255,0.03);border-radius:10px}
+.filters input,.filters select{background:#1a1a1a;color:#fff;border:1px solid #333;padding:10px 14px;border-radius:8px;font-size:14px;font-family:inherit}
+.filters input{flex:1;min-width:200px}
+.filters button{background:transparent;color:#888;border:1px solid #333;padding:10px 16px;border-radius:8px;cursor:pointer;font-size:13px}
+.filters button:hover{border-color:#22c55e;color:#22c55e}
+table{width:100%;border-collapse:collapse;background:rgba(255,255,255,0.02);border-radius:10px;overflow:hidden}
+th{background:#1a1a1a;color:#22c55e;padding:12px;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:1px;position:sticky;top:0;z-index:10}
+td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,0.05)}
+tr:hover{background:rgba(34,197,94,0.04)}
+tr.hidden{display:none}
+a{color:#22c55e;text-decoration:none}
+a:hover{text-decoration:underline}
+.sec{display:inline-block;padding:2px 8px;background:rgba(34,197,94,0.15);color:#22c55e;border-radius:6px;font-size:11px;font-weight:600}
+.fuente{font-size:11px;font-weight:600;text-transform:uppercase}
+.fuente.places{color:#60a5fa}
+.fuente.osm{color:#f59e0b}
+.btn{display:inline-block;padding:6px 14px;background:#22c55e;color:#000 !important;border-radius:6px;font-size:12px;font-weight:600;text-decoration:none !important}
+.btn:hover{background:#16a34a}
+#count{color:#22c55e;font-weight:700}
+@media(max-width:700px){
+  table,thead,tbody,th,td,tr{display:block}
+  thead{display:none}
+  tr{background:rgba(255,255,255,0.04);border-radius:10px;margin-bottom:10px;padding:10px}
+  td{border:none;padding:4px 0}
+  td:first-child{display:none}
+}
+</style></head><body>
+<div class="container">
+<h1>G&amp;G Elcano · <span>217</span> demos web</h1>
+<p class="sub">Índice de todas las demos generadas para negocios de Bizkaia. Actualizado 2026-04-19</p>
+
+<div class="stats">
+  <div class="stat"><b>217</b>Total demos</div>
+  <div class="stat"><b>167</b>Google Places</div>
+  <div class="stat"><b>50</b>OpenStreetMap</div>
+  <div class="stat"><b>23</b>Sectores</div>
+  <div class="stat"><b>13</b>Localidades</div>
+</div>
+
+<div class="filters">
+  <input type="text" id="q" placeholder="🔍 Buscar por nombre..."/>
+  <select id="sector">
+    <option value="">Todos los sectores</option>
+    <option value="abogado-gestoria">Servicios</option><option value="academia">Academia</option><option value="autoescuela">Autoescuela</option><option value="bar-de-tapas">Bar</option><option value="cafeteria">Cafetería</option><option value="centro-estetica">Estética</option><option value="cerrajeria">Cerrajería</option><option value="clinica-dental">Dental</option><option value="ferreteria">Ferretería</option><option value="fisioterapia">Fisioterapia</option><option value="gimnasio">Gimnasio</option><option value="inmobiliaria">Inmobiliaria</option><option value="kebab">Kebab</option><option value="optica">Óptica</option><option value="pasteleria-panaderia">Panadería</option><option value="peluqueria">Peluquería</option><option value="podologia">Podología</option><option value="psicologia">Psicología</option><option value="restaurante">Restaurante</option><option value="taller-bicicletas">Bicis</option><option value="taller-costura">Costura</option><option value="taller-mecanico">Taller</option><option value="tienda-ropa">Moda</option>
+  </select>
+  <select id="ciudad">
+    <option value="">Todas las ciudades</option>
+    <option value="barakaldo">Barakaldo</option><option value="berango">Berango</option><option value="bermeo">Bermeo</option><option value="bilbao">Bilbao</option><option value="bilbo">Bilbo</option><option value="bizkaia">Bizkaia</option><option value="eibar">Eibar</option><option value="galdakao">Galdakao</option><option value="getxo">Getxo</option><option value="lanestosa">Lanestosa</option><option value="mungia">Mungia</option><option value="tomelloso">Tomelloso</option><option value="valle de trápaga-trapagaran">Valle de Trápaga-Trapagaran</option>
+  </select>
+  <button onclick="clearFilters()">Limpiar</button>
+  <div style="padding:10px 0;color:#888;font-size:13px;">Mostrando <span id="count">217</span> de 217</div>
+</div>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>Negocio</th><th>Sector</th><th>Ciudad</th><th>Contacto</th><th>Fuente</th><th></th></tr>
+  </thead>
+  <tbody id="tb">
+    <tr data-sector="pasteleria-panaderia" data-ciudad="galdakao" data-nombre="24 horas vending zuatzaurre bizkarra lali gozokiak">
+  <td>1</td>
+  <td><a href="/24-horas-vending-zuatzaurre-bizkarra-lali-gozokiak/" target="_blank"><strong>24 HORAS VENDING ZUATZAURRE Bizkarra Lali Gozokiak</strong></a></td>
+  <td><span class="sec">Panadería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:panaderia@bizkarra.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/24-horas-vending-zuatzaurre-bizkarra-lali-gozokiak/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="abanca galdakao">
+  <td>2</td>
+  <td><a href="/abanca-galdakao/" target="_blank"><strong>ABANCA Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@abanca.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/abanca-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="pasteleria-panaderia" data-ciudad="bizkaia" data-nombre="abasotas">
+  <td>3</td>
+  <td><a href="/abasotas/" target="_blank"><strong>Abasotas</strong></a></td>
+  <td><span class="sec">Panadería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34633223352" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/abasotas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="academia" data-ciudad="galdakao" data-nombre="academia edel school of languages">
+  <td>4</td>
+  <td><a href="/academia-edel-school-of-languages/" target="_blank"><strong>Academia Edel School Of Languages</strong></a></td>
+  <td><span class="sec">Academia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:academiaedel@euskalnet.net">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/academia-edel-school-of-languages/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="academia" data-ciudad="galdakao" data-nombre="academia inglés dawn english galdakao">
+  <td>5</td>
+  <td><a href="/academia-ingles-dawn-english-galdakao/" target="_blank"><strong>Academia Inglés Dawn English Galdakao</strong></a></td>
+  <td><span class="sec">Academia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@dawnenglish.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/academia-ingles-dawn-english-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="academia" data-ciudad="galdakao" data-nombre="academia well">
+  <td>6</td>
+  <td><a href="/academia-well/" target="_blank"><strong>Academia Well</strong></a></td>
+  <td><span class="sec">Academia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@academiawell.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/academia-well/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="agencia generali seguros">
+  <td>7</td>
+  <td><a href="/agencia-generali-seguros/" target="_blank"><strong>Agencia Generali Seguros</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:servicioatencionalcliente.es@generali.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/agencia-generali-seguros/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ainara complementos">
+  <td>8</td>
+  <td><a href="/ainara-complementos/" target="_blank"><strong>Ainara Complementos</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@ainaracomplementos.com">✉️</a> <a href="https://wa.me/34650 84 58 48" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ainara-complementos/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ainhoa argote ilardia, psicólogo">
+  <td>9</td>
+  <td><a href="/ainhoa-argote-ilardia-psicologo/" target="_blank"><strong>Ainhoa Argote Ilardia, Psicólogo</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:soporte@doctoralia.com">✉️</a> <a href="https://wa.me/34679 86 76 65" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ainhoa-argote-ilardia-psicologo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="alain afflelou óptico, calle zamakoa, galdakao">
+  <td>10</td>
+  <td><a href="/alain-afflelou-optico-calle-zamakoa-galdakao/" target="_blank"><strong>Alain Afflelou Óptico, Calle Zamakoa, Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakao.zamakoa@afflelou.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/alain-afflelou-optico-calle-zamakoa-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="aldaketa import export, sa">
+  <td>11</td>
+  <td><a href="/aldaketa-import-export-sa/" target="_blank"><strong>Aldaketa Import Export, SA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:aldaketa.habana@aldaketa-online.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/aldaketa-import-export-sa/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="psicologia" data-ciudad="bilbao" data-nombre="alexis lópez">
+  <td>12</td>
+  <td><a href="/alexis-lopez/" target="_blank"><strong>Alexis López</strong></a></td>
+  <td><span class="sec">Psicología</span></td>
+  <td>Bilbao</td>
+  <td><a href="mailto:alexis@cop.es">✉️</a> <a href="https://wa.me/34676875012" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/alexis-lopez/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="alquileres chaco">
+  <td>13</td>
+  <td><a href="/alquileres-chaco/" target="_blank"><strong>Alquileres Chaco</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:alquileres@alquilereschaco.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/alquileres-chaco/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="inmobiliaria" data-ciudad="galdakao" data-nombre="amuriza inmobiliaria">
+  <td>14</td>
+  <td><a href="/amuriza-inmobiliaria/" target="_blank"><strong>Amuriza Inmobiliaria</strong></a></td>
+  <td><span class="sec">Inmobiliaria</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:leioa@amuriza.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/amuriza-inmobiliaria/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="anaiak taberna">
+  <td>15</td>
+  <td><a href="/anaiak-taberna/" target="_blank"><strong>Anaiak taberna</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34688751185" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/anaiak-taberna/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ander visuals | productora audiovisual">
+  <td>16</td>
+  <td><a href="/ander-visuals-productora-audiovisual/" target="_blank"><strong>Ander Visuals | Productora Audiovisual</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:usuario@dominio.com">✉️</a> <a href="https://wa.me/34629 57 36 21" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ander-visuals-productora-audiovisual/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="aplicaciones termotecnicas, s.l.">
+  <td>17</td>
+  <td><a href="/aplicaciones-termotecnicas-s-l/" target="_blank"><strong>APLICACIONES TERMOTECNICAS, S.L.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:webmaster@aplitec-tt.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/aplicaciones-termotecnicas-s-l/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ar shelving s.a.">
+  <td>18</td>
+  <td><a href="/ar-shelving-s-a/" target="_blank"><strong>AR Shelving S.A.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contact@ar-shelving.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ar-shelving-s-a/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="arantxa">
+  <td>19</td>
+  <td><a href="/arantxa/" target="_blank"><strong>Arantxa</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34671916052" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/arantxa/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="asados pio">
+  <td>20</td>
+  <td><a href="/asados-pio/" target="_blank"><strong>Asados Pio</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@asadorpiopio.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/asados-pio/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="asesores abogados lapurdi">
+  <td>21</td>
+  <td><a href="/asesores-abogados-lapurdi/" target="_blank"><strong>Asesores Abogados Lapurdi</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:lapurdi.asesores@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/asesores-abogados-lapurdi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="asesoria janire">
+  <td>22</td>
+  <td><a href="/asesoria-janire/" target="_blank"><strong>Asesoria Janire</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@ibarretajanire.com">✉️</a> <a href="https://wa.me/34666 52 64 29" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/asesoria-janire/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="asociación empresarial del polígono industrial erletxe">
+  <td>23</td>
+  <td><a href="/asociacion-empresarial-del-poligono-industrial-erletxe/" target="_blank"><strong>Asociación Empresarial del Polígono Industrial Erletxe</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:asociacion@poligonoerletxe.eus">✉️</a> <a href="https://wa.me/34688 84 51 47" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/asociacion-empresarial-del-poligono-industrial-erletxe/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="auto escuela santa cruz-asua">
+  <td>24</td>
+  <td><a href="/auto-escuela-santa-cruz-asua/" target="_blank"><strong>Auto Escuela Santa Cruz-Asua</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:autoescuelasantacruz@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/auto-escuela-santa-cruz-asua/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="autoescuela" data-ciudad="galdakao" data-nombre="autoescuela mikel (galdakao)">
+  <td>25</td>
+  <td><a href="/autoescuela-mikel-galdakao/" target="_blank"><strong>Autoescuela Mikel (Galdakao)</strong></a></td>
+  <td><span class="sec">Autoescuela</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:formacion@mikel.bz">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/autoescuela-mikel-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="autoescuela" data-ciudad="galdakao" data-nombre="autoescuela santa cruz">
+  <td>26</td>
+  <td><a href="/autoescuela-santa-cruz/" target="_blank"><strong>Autoescuela Santa Cruz</strong></a></td>
+  <td><span class="sec">Autoescuela</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:autoescuelasantacruz@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/autoescuela-santa-cruz/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="podologia" data-ciudad="bilbo" data-nombre="awr psiquiatría">
+  <td>27</td>
+  <td><a href="/awr-psiquiatria/" target="_blank"><strong>AWR Psiquiatría</strong></a></td>
+  <td><span class="sec">Podología</span></td>
+  <td>Bilbo</td>
+  <td><a href="mailto:awr_2014@gmail.com">✉️</a> <a href="https://wa.me/34664767571" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/awr-psiquiatria/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="kebab" data-ciudad="bizkaia" data-nombre="azhar">
+  <td>28</td>
+  <td><a href="/azhar/" target="_blank"><strong>Azhar</strong></a></td>
+  <td><span class="sec">Kebab</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34631114059" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/azhar/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="banco sabadell guipuzcoano">
+  <td>29</td>
+  <td><a href="/banco-sabadell-guipuzcoano/" target="_blank"><strong>Banco Sabadell Guipuzcoano</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@bancosabadell.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/banco-sabadell-guipuzcoano/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bankoa abanca">
+  <td>30</td>
+  <td><a href="/bankoa-abanca/" target="_blank"><strong>Bankoa ABANCA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@abanca.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bankoa-abanca/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="getxo" data-nombre="bar atrio">
+  <td>31</td>
+  <td><a href="/bar-atrio/" target="_blank"><strong>Bar Atrio</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Getxo</td>
+  <td> <a href="https://wa.me/34617429001" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/bar-atrio/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="galdakao" data-nombre="bar el arco">
+  <td>32</td>
+  <td><a href="/bar-el-arco/" target="_blank"><strong>Bar El Arco</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@barelarco.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bar-el-arco/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="lanestosa" data-nombre="bar rosi">
+  <td>33</td>
+  <td><a href="/bar-rosi/" target="_blank"><strong>Bar Rosi</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Lanestosa</td>
+  <td> <a href="https://wa.me/34620453626" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/bar-rosi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="galdakao" data-nombre="basoa taberna">
+  <td>34</td>
+  <td><a href="/basoa-taberna/" target="_blank"><strong>Basoa Taberna</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:basoagaldakao@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/basoa-taberna/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="batzoki">
+  <td>35</td>
+  <td><a href="/batzoki/" target="_blank"><strong>Batzoki</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34608415659" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/batzoki/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="galdakao" data-nombre="batzokia">
+  <td>36</td>
+  <td><a href="/batzokia/" target="_blank"><strong>Batzokia</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:marije.mgrego@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/batzokia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="bihotz">
+  <td>37</td>
+  <td><a href="/bihotz/" target="_blank"><strong>Bihotz</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td><a href="mailto:bihotzcafebilbao@gmail.com">✉️</a> <a href="https://wa.me/34679060312" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/bihotz/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="biomagnetismo">
+  <td>38</td>
+  <td><a href="/biomagnetismo/" target="_blank"><strong>BIOMAGNETISMO</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:susanaciarrusta@gmail.com">✉️</a> <a href="https://wa.me/34633 32 03 07" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/biomagnetismo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bizkagas bizkaia">
+  <td>39</td>
+  <td><a href="/bizkagas-bizkaia/" target="_blank"><strong>Bizkagas Bizkaia</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:bizkagas@gmail.com">✉️</a> <a href="https://wa.me/34665 74 27 00" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bizkagas-bizkaia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bizkai gestión">
+  <td>40</td>
+  <td><a href="/bizkai-gestion/" target="_blank"><strong>Bizkai Gestión</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@bizkaigestion.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bizkai-gestion/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bm (ander deuna)">
+  <td>41</td>
+  <td><a href="/bm-ander-deuna/" target="_blank"><strong>BM (Ander Deuna)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:bgogenolablanco@deloitte.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bm-ander-deuna/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bm supermercados (uriarte)">
+  <td>42</td>
+  <td><a href="/bm-supermercados-uriarte/" target="_blank"><strong>BM Supermercados (Uriarte)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:bgogenolablanco@deloitte.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bm-supermercados-uriarte/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="bm urban (bizkai)">
+  <td>43</td>
+  <td><a href="/bm-urban-bizkai/" target="_blank"><strong>BM Urban (Bizkai)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:bgogenolablanco@deloitte.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/bm-urban-bizkai/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="brikte - suelos con diseños sostenibles">
+  <td>44</td>
+  <td><a href="/brikte-suelos-con-disenos-sostenibles/" target="_blank"><strong>Brikte - Suelos con diseños sostenibles</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@brikte.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/brikte-suelos-con-disenos-sostenibles/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cerrajeria" data-ciudad="bizkaia" data-nombre="c&amp;j cerrajeros">
+  <td>45</td>
+  <td><a href="/c-j-cerrajeros/" target="_blank"><strong>C&amp;J Cerrajeros</strong></a></td>
+  <td><span class="sec">Cerrajería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34665590119" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/c-j-cerrajeros/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bilbo" data-nombre="cafe teatro la nube">
+  <td>46</td>
+  <td><a href="/cafe-teatro-la-nube/" target="_blank"><strong>Cafe Teatro La Nube</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bilbo</td>
+  <td><a href="mailto:lanubekafeteatro@gmail.com">✉️</a> <a href="https://wa.me/34626802026" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cafe-teatro-la-nube/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="cafetería el gato">
+  <td>47</td>
+  <td><a href="/cafeteria-el-gato/" target="_blank"><strong>Cafetería El Gato</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34671660406" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cafeteria-el-gato/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="campo de fútbol santa bárbara / santa barbara futbol zelaia">
+  <td>48</td>
+  <td><a href="/campo-de-futbol-santa-barbara-santa-barbara-futbol-zelaia/" target="_blank"><strong>Campo de Fútbol Santa Bárbara / Santa Barbara Futbol Zelaia</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakaocd1914@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/campo-de-futbol-santa-barbara-santa-barbara-futbol-zelaia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="casa rural erdikoetxe">
+  <td>49</td>
+  <td><a href="/casa-rural-erdikoetxe/" target="_blank"><strong>Casa Rural Erdikoetxe</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:erdikoetxelandetxea@hotmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/casa-rural-erdikoetxe/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="centro ayurveda devasahi">
+  <td>50</td>
+  <td><a href="/centro-ayurveda-devasahi/" target="_blank"><strong>Centro Ayurveda Devasahi</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@ayurvedadevasahi.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-ayurveda-devasahi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="centro de apoyo pdp">
+  <td>51</td>
+  <td><a href="/centro-de-apoyo-pdp/" target="_blank"><strong>Centro De Apoyo Pdp</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:centrodeapoyopdp@gmail.com">✉️</a> <a href="https://wa.me/34663 41 66 55" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-de-apoyo-pdp/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="centro de educación de personas adultas de galdakao">
+  <td>52</td>
+  <td><a href="/centro-de-educacion-de-personas-adultas-de-galdakao/" target="_blank"><strong>Centro de Educación de Personas Adultas de Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:014275aa@hezkuntza.net">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-de-educacion-de-personas-adultas-de-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="fisioterapia" data-ciudad="bizkaia" data-nombre="centro de fisioterapia">
+  <td>53</td>
+  <td><a href="/centro-de-fisioterapia/" target="_blank"><strong>Centro de Fisioterapia</strong></a></td>
+  <td><span class="sec">Fisioterapia</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34657814644" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/centro-de-fisioterapia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="fisioterapia" data-ciudad="galdakao" data-nombre="centro de fisioterapia y osteopatía bizian">
+  <td>54</td>
+  <td><a href="/centro-de-fisioterapia-y-osteopatia-bizian/" target="_blank"><strong>Centro de Fisioterapia y Osteopatía BIZIAN</strong></a></td>
+  <td><span class="sec">Fisioterapia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@bizian.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-de-fisioterapia-y-osteopatia-bizian/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="gimnasio" data-ciudad="galdakao" data-nombre="centro elexalde (gimnasio)">
+  <td>55</td>
+  <td><a href="/centro-elexalde-gimnasio/" target="_blank"><strong>Centro Elexalde (Gimnasio)</strong></a></td>
+  <td><span class="sec">Gimnasio</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@centroelexalde.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-elexalde-gimnasio/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="centro haltza">
+  <td>56</td>
+  <td><a href="/centro-haltza/" target="_blank"><strong>Centro Haltza</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@haltzazentroa.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-haltza/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="centro logístico makro galdakao (bizkaia)">
+  <td>57</td>
+  <td><a href="/centro-logistico-makro-galdakao-bizkaia/" target="_blank"><strong>Centro Logístico Makro Galdakao (Bizkaia)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:seller@metro-marketplace.eu">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/centro-logistico-makro-galdakao-bizkaia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cerrajeria" data-ciudad="bizkaia" data-nombre="cerrajería bilbaina">
+  <td>58</td>
+  <td><a href="/cerrajeria-bilbaina/" target="_blank"><strong>Cerrajería Bilbaina</strong></a></td>
+  <td><span class="sec">Cerrajería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34688877907" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cerrajeria-bilbaina/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cerrajeria" data-ciudad="galdakao" data-nombre="cerrajería elexalde">
+  <td>59</td>
+  <td><a href="/cerrajeria-elexalde/" target="_blank"><strong>Cerrajería Elexalde</strong></a></td>
+  <td><span class="sec">Cerrajería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:cerrajeriaelexalde@gmail.com">✉️</a> <a href="https://wa.me/34688 89 47 17" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/cerrajeria-elexalde/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="bilbao" data-nombre="charlotte">
+  <td>60</td>
+  <td><a href="/charlotte/" target="_blank"><strong>Charlotte</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Bilbao</td>
+  <td> <a href="https://wa.me/34605721496" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/charlotte/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="chino hong-kong">
+  <td>61</td>
+  <td><a href="/chino-hong-kong/" target="_blank"><strong>Chino Hong-Kong</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@codigopro.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/chino-hong-kong/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="cinnamon">
+  <td>62</td>
+  <td><a href="/cinnamon/" target="_blank"><strong>Cinnamon</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34688894173" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cinnamon/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="clarel">
+  <td>63</td>
+  <td><a href="/clarel/" target="_blank"><strong>CLAREL</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:dia.attcliente@diagroup.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/clarel/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="click eta click">
+  <td>64</td>
+  <td><a href="/click-eta-click/" target="_blank"><strong>Click eta click</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:clicketaclick@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/click-eta-click/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="clinica andra mari">
+  <td>65</td>
+  <td><a href="/clinica-andra-mari/" target="_blank"><strong>Clinica Andra Mari</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@clinicaandramari.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/clinica-andra-mari/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="clínica andra marí galdakao">
+  <td>66</td>
+  <td><a href="/clinica-andra-mari-galdakao/" target="_blank"><strong>Clínica Andra Marí Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:click@bizkaifisios.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/clinica-andra-mari-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="galdakao" data-nombre="clínica dental loan">
+  <td>67</td>
+  <td><a href="/clinica-dental-loan/" target="_blank"><strong>Clínica Dental Loan</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:infoloan@loandental.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/clinica-dental-loan/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="clinica marzo">
+  <td>68</td>
+  <td><a href="/clinica-marzo/" target="_blank"><strong>Clinica Marzo</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@clinicamarzo.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/clinica-marzo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="club deportivo galdakao">
+  <td>69</td>
+  <td><a href="/club-deportivo-galdakao/" target="_blank"><strong>Club Deportivo Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakaocd1914@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/club-deportivo-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="coaliment supermercado">
+  <td>70</td>
+  <td><a href="/coaliment-supermercado/" target="_blank"><strong>Coaliment supermercado</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:covalco@covalco.es">✉️</a> <a href="https://wa.me/34640 33 85 55" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/coaliment-supermercado/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="pasteleria-panaderia" data-ciudad="bizkaia" data-nombre="confituras silvia">
+  <td>71</td>
+  <td><a href="/confituras-silvia/" target="_blank"><strong>Confituras Silvia</strong></a></td>
+  <td><span class="sec">Panadería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34685728254" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/confituras-silvia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="construcciones iberluze">
+  <td>72</td>
+  <td><a href="/construcciones-iberluze/" target="_blank"><strong>Construcciones Iberluze</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:iberluze@iberluze.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/construcciones-iberluze/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="construcciones zamakoa">
+  <td>73</td>
+  <td><a href="/construcciones-zamakoa/" target="_blank"><strong>Construcciones Zamakoa</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:zamakoa@zamakoa.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/construcciones-zamakoa/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="coviran">
+  <td>74</td>
+  <td><a href="/coviran/" target="_blank"><strong>Coviran</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:eggamiz@coviran.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/coviran/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="coviran urreta">
+  <td>75</td>
+  <td><a href="/coviran-urreta/" target="_blank"><strong>Coviran Urreta</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:atencionalcliente@coviran.es">✉️</a> <a href="https://wa.me/34679 28 73 54" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/coviran-urreta/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="eibar" data-nombre="cris barbershop">
+  <td>76</td>
+  <td><a href="/cris-barbershop/" target="_blank"><strong>Cris Barbershop</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Eibar</td>
+  <td> <a href="https://wa.me/34642788164" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cris-barbershop/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="mungia" data-nombre="cristina gumuzio irala">
+  <td>77</td>
+  <td><a href="/cristina-gumuzio-irala/" target="_blank"><strong>Cristina Gumuzio Irala</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Mungia</td>
+  <td> <a href="https://wa.me/34629225963" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/cristina-gumuzio-irala/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="daniel baserrian">
+  <td>78</td>
+  <td><a href="/daniel-baserrian/" target="_blank"><strong>Daniel Baserrian</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:danielbaserrian@gmail.com">✉️</a> <a href="https://wa.me/34688 86 18 20" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/daniel-baserrian/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="dekoark">
+  <td>79</td>
+  <td><a href="/dekoark/" target="_blank"><strong>Dekoark</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@dekoark.com">✉️</a> <a href="https://wa.me/34688 72 70 58" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/dekoark/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="denda berri">
+  <td>80</td>
+  <td><a href="/denda-berri/" target="_blank"><strong>Denda Berri</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34697564394" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/denda-berri/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="ferreteria" data-ciudad="bizkaia" data-nombre="dia">
+  <td>81</td>
+  <td><a href="/dia/" target="_blank"><strong>Dia</strong></a></td>
+  <td><span class="sec">Ferretería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34696702608" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/dia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="dietetica usansolo estar en forma">
+  <td>82</td>
+  <td><a href="/dietetica-usansolo-estar-en-forma/" target="_blank"><strong>DIETETICA USANSOLO ESTAR EN FORMA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:dieteticausansoloeef@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/dietetica-usansolo-estar-en-forma/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="dilux galdakao 2">
+  <td>83</td>
+  <td><a href="/dilux-galdakao-2/" target="_blank"><strong>Dilux Galdakao 2</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@retabet.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/dilux-galdakao-2/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="doistua s.a.">
+  <td>84</td>
+  <td><a href="/doistua-s-a/" target="_blank"><strong>Doistua S.A.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:doistua@doistua.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/doistua-s-a/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="galdakao" data-nombre="dra. ingrid martín gómez, dentista">
+  <td>85</td>
+  <td><a href="/dra-ingrid-martin-gomez-dentista/" target="_blank"><strong>Dra. Ingrid Martín Gómez, Dentista</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:soporte@doctoralia.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/dra-ingrid-martin-gomez-dentista/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="tienda-ropa" data-ciudad="bizkaia" data-nombre="due">
+  <td>86</td>
+  <td><a href="/due/" target="_blank"><strong>Due</strong></a></td>
+  <td><span class="sec">Moda</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34603668668" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/due/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="el laterío">
+  <td>87</td>
+  <td><a href="/el-laterio/" target="_blank"><strong>El Laterío</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34655948696" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/el-laterio/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="centro-estetica" data-ciudad="galdakao" data-nombre="elena spirina nail lounge">
+  <td>88</td>
+  <td><a href="/elena-spirina-nail-lounge/" target="_blank"><strong>Elena Spirina Nail Lounge</strong></a></td>
+  <td><span class="sec">Estética</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:elena@elenaspirina.es">✉️</a> <a href="https://wa.me/34666 68 36 34" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/elena-spirina-nail-lounge/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="emocionak desayunos">
+  <td>89</td>
+  <td><a href="/emocionak-desayunos/" target="_blank"><strong>Emocionak desayunos</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:reservas@emocionakdesayunos.com">✉️</a> <a href="https://wa.me/34607 72 26 19" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/emocionak-desayunos/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="eroski city">
+  <td>90</td>
+  <td><a href="/eroski-city/" target="_blank"><strong>EROSKI city</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:atencionalconsumidor@eroski.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/eroski-city/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="etce-farma">
+  <td>91</td>
+  <td><a href="/etce-farma/" target="_blank"><strong>ETCE-FARMA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:etce@etce.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/etce-farma/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="ferreteria" data-ciudad="galdakao" data-nombre="eurodenda">
+  <td>92</td>
+  <td><a href="/eurodenda/" target="_blank"><strong>Eurodenda</strong></a></td>
+  <td><span class="sec">Ferretería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@eurodenda.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/eurodenda/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="facilitame">
+  <td>93</td>
+  <td><a href="/facilitame/" target="_blank"><strong>Facilitame</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@facilitame.es">✉️</a> <a href="https://wa.me/34655 92 99 97" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/facilitame/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="farmacia ortopedia dr. miguel ucelay sanz">
+  <td>94</td>
+  <td><a href="/farmacia-ortopedia-dr-miguel-ucelay-sanz/" target="_blank"><strong>Farmacia Ortopedia Dr. Miguel Ucelay Sanz</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:farmaciamucelay@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/farmacia-ortopedia-dr-miguel-ucelay-sanz/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="farmacia unai perez">
+  <td>95</td>
+  <td><a href="/farmacia-unai-perez/" target="_blank"><strong>Farmacia Unai Perez</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:farmaciaperezsaez@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/farmacia-unai-perez/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="farmacia-ortopedia dr.ucelay sanz">
+  <td>96</td>
+  <td><a href="/farmacia-ortopedia-dr-ucelay-sanz/" target="_blank"><strong>Farmacia-Ortopedia Dr.Ucelay Sanz</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:farmaciamucelay@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/farmacia-ortopedia-dr-ucelay-sanz/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="fer">
+  <td>97</td>
+  <td><a href="/fer/" target="_blank"><strong>Fer</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34665830229" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/fer/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="fiatc seguros - agencia galarza">
+  <td>98</td>
+  <td><a href="/fiatc-seguros-agencia-galarza/" target="_blank"><strong>Fiatc Seguros - Agencia Galarza</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galarzaseguros@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/fiatc-seguros-agencia-galarza/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="fisiosbizkaia galdakao">
+  <td>99</td>
+  <td><a href="/fisiosbizkaia-galdakao/" target="_blank"><strong>Fisiosbizkaia Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:click@bizkaifisios.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/fisiosbizkaia-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="fisioterapia" data-ciudad="bizkaia" data-nombre="fisioteraida">
+  <td>100</td>
+  <td><a href="/fisioteraida/" target="_blank"><strong>Fisioteraida</strong></a></td>
+  <td><span class="sec">Fisioterapia</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34611409399" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/fisioteraida/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="fisioterapia" data-ciudad="galdakao" data-nombre="fisysalud">
+  <td>101</td>
+  <td><a href="/fisysalud/" target="_blank"><strong>FisySalud</strong></a></td>
+  <td><span class="sec">Fisioterapia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:fisysalud@hotmail.com">✉️</a> <a href="https://wa.me/34645580594" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/fisysalud/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="frutas y verduras mas de mil sabores">
+  <td>102</td>
+  <td><a href="/frutas-y-verduras-mas-de-mil-sabores/" target="_blank"><strong>Frutas y Verduras mas de mil sabores</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:contacto@frutasyverduraswaqas.com">✉️</a> <a href="https://wa.me/34666 39 06 45" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/frutas-y-verduras-mas-de-mil-sabores/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="galdakao autoeskola">
+  <td>103</td>
+  <td><a href="/galdakao-autoeskola/" target="_blank"><strong>Galdakao Autoeskola</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@galdakaoautoeskola.eus">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/galdakao-autoeskola/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="galdakao garbiketak">
+  <td>104</td>
+  <td><a href="/galdakao-garbiketak/" target="_blank"><strong>Galdakao Garbiketak</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:comercial@garbiketak.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/galdakao-garbiketak/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="galdakaoko kantauri igeriketa kirol taldea">
+  <td>105</td>
+  <td><a href="/galdakaoko-kantauri-igeriketa-kirol-taldea/" target="_blank"><strong>Galdakaoko Kantauri Igeriketa Kirol Taldea</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:cng.git@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/galdakaoko-kantauri-igeriketa-kirol-taldea/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="berango" data-nombre="gastro burguer berango">
+  <td>106</td>
+  <td><a href="/gastro-burguer-berango/" target="_blank"><strong>Gastro Burguer Berango</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Berango</td>
+  <td> <a href="https://wa.me/34681955536" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/gastro-burguer-berango/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="taller-mecanico" data-ciudad="galdakao" data-nombre="gesticar bilbao">
+  <td>107</td>
+  <td><a href="/gesticar-bilbao/" target="_blank"><strong>Gesticar Bilbao</strong></a></td>
+  <td><span class="sec">Taller</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ventas@gesticarbilbao.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/gesticar-bilbao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="gestión de residuos en galdakao con reciclaje j. andrés astigarraga">
+  <td>108</td>
+  <td><a href="/gestion-de-residuos-en-galdakao-con-reciclaje-j-andres-astig/" target="_blank"><strong>gestión de residuos en galdakao con reciclaje j. andrés astigarraga</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@reciclajesbizkaia.com">✉️</a> <a href="https://wa.me/34667 71 94 27" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/gestion-de-residuos-en-galdakao-con-reciclaje-j-andres-astig/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="gezur aretza">
+  <td>109</td>
+  <td><a href="/gezur-aretza/" target="_blank"><strong>Gezur Aretza</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:gezuraretza@gmail.com">✉️</a> <a href="https://wa.me/34633 57 87 01" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/gezur-aretza/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="gm cash">
+  <td>110</td>
+  <td><a href="/gm-cash/" target="_blank"><strong>GM Cash</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:gerentegm302@transgourmet.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/gm-cash/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="grupo hierros etxebarria">
+  <td>111</td>
+  <td><a href="/grupo-hierros-etxebarria/" target="_blank"><strong>Grupo Hierros Etxebarria</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:clientes@hierrosetxebarria.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/grupo-hierros-etxebarria/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="grupo orion">
+  <td>112</td>
+  <td><a href="/grupo-orion/" target="_blank"><strong>Grupo Orion</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:orion@oriongrupo.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/grupo-orion/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hiper fruta g30 lapurdi">
+  <td>113</td>
+  <td><a href="/hiper-fruta-g30-lapurdi/" target="_blank"><strong>Hiper Fruta G30 Lapurdi</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:direccion@hiperfruta.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hiper-fruta-g30-lapurdi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hiper fruta g30 muguru">
+  <td>114</td>
+  <td><a href="/hiper-fruta-g30-muguru/" target="_blank"><strong>Hiper Fruta G30 Muguru</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:direccion@hiperfruta.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hiper-fruta-g30-muguru/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hiperoffice">
+  <td>115</td>
+  <td><a href="/hiperoffice/" target="_blank"><strong>HIPERoffice</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:hipergaldakao@hotmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hiperoffice/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="tienda-ropa" data-ciudad="valle de trápaga-trapagaran" data-nombre="hiru">
+  <td>116</td>
+  <td><a href="/hiru/" target="_blank"><strong>Hiru</strong></a></td>
+  <td><span class="sec">Moda</span></td>
+  <td>Valle de Trápaga-Trapagaran</td>
+  <td> <a href="https://wa.me/34619650669" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/hiru/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hitza klinika">
+  <td>117</td>
+  <td><a href="/hitza-klinika/" target="_blank"><strong>Hitza Klinika</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:impallari@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hitza-klinika/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hospital galdakao-usansolo ospitalea">
+  <td>118</td>
+  <td><a href="/hospital-galdakao-usansolo-ospitalea/" target="_blank"><strong>Hospital Galdakao-Usansolo Ospitalea</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:prevencionccr@osakidetza.eus">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hospital-galdakao-usansolo-ospitalea/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="hotel iraragorri">
+  <td>119</td>
+  <td><a href="/hotel-iraragorri/" target="_blank"><strong>Hotel Iraragorri</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:hotel@iraragorri.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hotel-iraragorri/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="galdakao" data-nombre="hotel iraragorri / restaurante petit komite">
+  <td>120</td>
+  <td><a href="/hotel-iraragorri-restaurante-petit-komite/" target="_blank"><strong>Hotel Iraragorri / Restaurante Petit Komite</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:hotel@iraragorri.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/hotel-iraragorri-restaurante-petit-komite/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="iardun gestion integral s.l.">
+  <td>121</td>
+  <td><a href="/iardun-gestion-integral-s-l/" target="_blank"><strong>Iardun Gestion Integral S.L.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:iardun@iardun.net">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/iardun-gestion-integral-s-l/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="imprenta">
+  <td>122</td>
+  <td><a href="/imprenta/" target="_blank"><strong>Imprenta</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ventas.bilbao@imprenta-bilbao.com.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/imprenta/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="imq igurco plazakoetxe">
+  <td>123</td>
+  <td><a href="/imq-igurco-plazakoetxe/" target="_blank"><strong>IMQ Igurco Plazakoetxe</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:colectivos@imq.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/imq-igurco-plazakoetxe/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="inmobiliaria" data-ciudad="galdakao" data-nombre="inmobiliaria quorum">
+  <td>124</td>
+  <td><a href="/inmobiliaria-quorum/" target="_blank"><strong>Inmobiliaria Quorum</strong></a></td>
+  <td><span class="sec">Inmobiliaria</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakao@inmobiliariaquorum.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/inmobiliaria-quorum/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="instituto oftalmológico etxeandia">
+  <td>125</td>
+  <td><a href="/instituto-oftalmologico-etxeandia/" target="_blank"><strong>Instituto Oftalmológico Etxeandia</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@oftalmologia-etxeandia.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/instituto-oftalmologico-etxeandia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="iratxe iturriaga - galdakao">
+  <td>126</td>
+  <td><a href="/iratxe-iturriaga-galdakao/" target="_blank"><strong>Iratxe Iturriaga - Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:iturrioarte@yahoo.es">✉️</a> <a href="https://wa.me/34636 79 33 41" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/iratxe-iturriaga-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="job coworking">
+  <td>127</td>
+  <td><a href="/job-coworking/" target="_blank"><strong>JOB Coworking</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakao@jobcoworking.com">✉️</a> <a href="https://wa.me/34645 73 54 28" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/job-coworking/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="joyería anaiak">
+  <td>128</td>
+  <td><a href="/joyeria-anaiak/" target="_blank"><strong>Joyería Anaiak</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@anaiakbatu.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/joyeria-anaiak/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="joyería y relojería eguzkilore - zuluaga galdakao">
+  <td>129</td>
+  <td><a href="/joyeria-y-relojeria-eguzkilore-zuluaga-galdakao/" target="_blank"><strong>Joyería y Relojería Eguzkilore - Zuluaga Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:atencionclientes@eguzkilorejoya.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/joyeria-y-relojeria-eguzkilore-zuluaga-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kalamazoo - muebles y material de oficina">
+  <td>130</td>
+  <td><a href="/kalamazoo-muebles-y-material-de-oficina/" target="_blank"><strong>Kalamazoo - Muebles y Material de Oficina</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:rgpd@kalamazoo.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kalamazoo-muebles-y-material-de-oficina/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kenua denda">
+  <td>131</td>
+  <td><a href="/kenua-denda/" target="_blank"><strong>Kenua Denda</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@kenuadenda.com">✉️</a> <a href="https://wa.me/34622313267" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kenua-denda/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kids&amp;us - inglés para niños">
+  <td>132</td>
+  <td><a href="/kids-us-ingles-para-ninos/" target="_blank"><strong>Kids&amp;Us - Inglés para niños</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@kidsandus.com">✉️</a> <a href="https://wa.me/34693 55 13 12" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kids-us-ingles-para-ninos/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kids&amp;us galdakao">
+  <td>133</td>
+  <td><a href="/kids-us-galdakao/" target="_blank"><strong>Kids&amp;Us Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@kidsandus.com">✉️</a> <a href="https://wa.me/34693 55 13 12" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kids-us-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="fisioterapia" data-ciudad="galdakao" data-nombre="kines - fisioterapia y entrenamiento personal">
+  <td>134</td>
+  <td><a href="/kines-fisioterapia-y-entrenamiento-personal/" target="_blank"><strong>Kines - Fisioterapia y Entrenamiento Personal</strong></a></td>
+  <td><span class="sec">Fisioterapia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@kinesfisioterapia.com">✉️</a> <a href="https://wa.me/34691 66 92 62" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kines-fisioterapia-y-entrenamiento-personal/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kinesfit">
+  <td>135</td>
+  <td><a href="/kinesfit/" target="_blank"><strong>KINESFIT</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@kinesfisioterapia.com">✉️</a> <a href="https://wa.me/34691 66 92 62" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kinesfit/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kzgunea galdakao">
+  <td>136</td>
+  <td><a href="/kzgunea-galdakao/" target="_blank"><strong>KZgunea Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:kzc@kzgunea.net">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kzgunea-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="kzgunea usansolo">
+  <td>137</td>
+  <td><a href="/kzgunea-usansolo/" target="_blank"><strong>KZgunea Usansolo</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:kzc@kzgunea.net">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/kzgunea-usansolo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="galdakao" data-nombre="la casa del dentista">
+  <td>138</td>
+  <td><a href="/la-casa-del-dentista/" target="_blank"><strong>La Casa del Dentista</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@lacasadeldentista.es">✉️</a> <a href="https://wa.me/34680 19 93 49" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/la-casa-del-dentista/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bilbo" data-nombre="la ley seca">
+  <td>139</td>
+  <td><a href="/la-ley-seca/" target="_blank"><strong>La Ley Seca</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bilbo</td>
+  <td> <a href="https://wa.me/34628927968" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/la-ley-seca/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="la vieja tienda">
+  <td>140</td>
+  <td><a href="/la-vieja-tienda/" target="_blank"><strong>La Vieja Tienda</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34645970191" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/la-vieja-tienda/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="langarri logistica, s.l. (grupo rhenus)">
+  <td>141</td>
+  <td><a href="/langarri-logistica-s-l-grupo-rhenus/" target="_blank"><strong>Langarri Logistica, S.L. (Grupo Rhenus)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@langarri.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/langarri-logistica-s-l-grupo-rhenus/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="inmobiliaria" data-ciudad="eibar" data-nombre="larragest">
+  <td>142</td>
+  <td><a href="/larragest/" target="_blank"><strong>Larragest</strong></a></td>
+  <td><span class="sec">Inmobiliaria</span></td>
+  <td>Eibar</td>
+  <td> <a href="https://wa.me/34697258966" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/larragest/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="kebab" data-ciudad="bilbao" data-nombre="las fritas">
+  <td>143</td>
+  <td><a href="/las-fritas/" target="_blank"><strong>Las Fritas</strong></a></td>
+  <td><span class="sec">Kebab</span></td>
+  <td>Bilbao</td>
+  <td> <a href="https://wa.me/34697898692" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/las-fritas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="lingohub school">
+  <td>144</td>
+  <td><a href="/lingohub-school/" target="_blank"><strong>Lingohub School</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:admin@lingohubschool.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/lingohub-school/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="galdakao" data-nombre="loan dental">
+  <td>145</td>
+  <td><a href="/loan-dental/" target="_blank"><strong>LOAN Dental</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:infoloan@loandental.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/loan-dental/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="lotería galdakao, administración número 1">
+  <td>146</td>
+  <td><a href="/loteria-galdakao-administracion-numero-1/" target="_blank"><strong>Lotería Galdakao, Administración número 1</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:admongaldakao@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/loteria-galdakao-administracion-numero-1/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bilbao" data-nombre="manolita la primera">
+  <td>147</td>
+  <td><a href="/manolita-la-primera/" target="_blank"><strong>Manolita la Primera</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bilbao</td>
+  <td> <a href="https://wa.me/34661773100" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/manolita-la-primera/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="centro-estetica" data-ciudad="bizkaia" data-nombre="manos bellas">
+  <td>148</td>
+  <td><a href="/manos-bellas/" target="_blank"><strong>Manos Bellas</strong></a></td>
+  <td><span class="sec">Estética</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34615944585" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/manos-bellas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="mapfre">
+  <td>149</td>
+  <td><a href="/mapfre/" target="_blank"><strong>Mapfre</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:midoia@mapfre.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/mapfre/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="taller-costura" data-ciudad="bizkaia" data-nombre="marco">
+  <td>150</td>
+  <td><a href="/marco/" target="_blank"><strong>Marco</strong></a></td>
+  <td><span class="sec">Costura</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34617954013" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/marco/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="galdakao" data-nombre="maría vidal estilistas">
+  <td>151</td>
+  <td><a href="/maria-vidal-estilistas/" target="_blank"><strong>María Vidal Estilistas</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:mariavidalestilistas@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/maria-vidal-estilistas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="galdakao" data-nombre="marios peluqueros">
+  <td>152</td>
+  <td><a href="/marios-peluqueros/" target="_blank"><strong>Marios Peluqueros</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@mariospeluqueros.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/marios-peluqueros/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="marsoni sistemas">
+  <td>153</td>
+  <td><a href="/marsoni-sistemas/" target="_blank"><strong>Marsoni Sistemas</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:sistemas@marsoni.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/marsoni-sistemas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="centro-estetica" data-ciudad="bermeo" data-nombre="matt tattoo art">
+  <td>154</td>
+  <td><a href="/matt-tattoo-art/" target="_blank"><strong>Matt Tattoo Art</strong></a></td>
+  <td><span class="sec">Estética</span></td>
+  <td>Bermeo</td>
+  <td><a href="mailto:tatuajesmatt@gmail.com">✉️</a> <a href="https://wa.me/34603705902" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/matt-tattoo-art/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="midas galdakao">
+  <td>155</td>
+  <td><a href="/midas-galdakao/" target="_blank"><strong>Midas Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:privacidad@midas.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/midas-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="pasteleria-panaderia" data-ciudad="bizkaia" data-nombre="misschocole">
+  <td>156</td>
+  <td><a href="/misschocole/" target="_blank"><strong>Misschocole</strong></a></td>
+  <td><span class="sec">Panadería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34671640343" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/misschocole/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="muguru 2000 decoración">
+  <td>157</td>
+  <td><a href="/muguru-2000-decoracion/" target="_blank"><strong>Muguru 2000 Decoración</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ventas@muguru2000.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/muguru-2000-decoracion/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="network asesores">
+  <td>158</td>
+  <td><a href="/network-asesores/" target="_blank"><strong>Network Asesores</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:networkasesores@networkasesores.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/network-asesores/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ngl proyectos y construcciones s l">
+  <td>159</td>
+  <td><a href="/ngl-proyectos-y-construcciones-s-l/" target="_blank"><strong>Ngl Proyectos Y Construcciones S L</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ngl@ngl.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ngl-proyectos-y-construcciones-s-l/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bilbao" data-nombre="niza barria">
+  <td>160</td>
+  <td><a href="/niza-barria/" target="_blank"><strong>Niza barria</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bilbao</td>
+  <td> <a href="https://wa.me/34654357930" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/niza-barria/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="obramat galdakao">
+  <td>161</td>
+  <td><a href="/obramat-galdakao/" target="_blank"><strong>OBRAMAT Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info.alcalag@obramat.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/obramat-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="oficina seguros pelayo">
+  <td>162</td>
+  <td><a href="/oficina-seguros-pelayo/" target="_blank"><strong>Oficina Seguros Pelayo</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakao@agenciadepelayo.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/oficina-seguros-pelayo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="ofipapel bizkaia">
+  <td>163</td>
+  <td><a href="/ofipapel-bizkaia/" target="_blank"><strong>OFIPAPEL BIZKAIA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ofipapelbizkaia@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/ofipapel-bizkaia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="oksofás bilbao-galdakao">
+  <td>164</td>
+  <td><a href="/oksofas-bilbao-galdakao/" target="_blank"><strong>OKSofás Bilbao-Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@oksofas.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/oksofas-bilbao-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="onf galdakao">
+  <td>165</td>
+  <td><a href="/onf-galdakao/" target="_blank"><strong>ONF GALDAKAO</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@onfgaldakao.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/onf-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="onintza diez - correduría de seguros confluence group - galdakao">
+  <td>166</td>
+  <td><a href="/onintza-diez-correduria-de-seguros-confluence-group-galdakao/" target="_blank"><strong>Onintza Diez - Correduría de Seguros Confluence Group - Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:odiez@confluencegroup.es">✉️</a> <a href="https://wa.me/34633 96 48 43" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/onintza-diez-correduria-de-seguros-confluence-group-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="optica" data-ciudad="galdakao" data-nombre="óptica galdakao">
+  <td>167</td>
+  <td><a href="/optica-galdakao/" target="_blank"><strong>Óptica Galdakao</strong></a></td>
+  <td><span class="sec">Óptica</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:optica@opticagaldakao.com">✉️</a> <a href="https://wa.me/34688 85 66 90" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/optica-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="optica" data-ciudad="galdakao" data-nombre="optica galdakao (centro optico)">
+  <td>168</td>
+  <td><a href="/optica-galdakao-centro-optico/" target="_blank"><strong>Optica Galdakao (Centro Optico)</strong></a></td>
+  <td><span class="sec">Óptica</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:optica@opticagaldakao.com">✉️</a> <a href="https://wa.me/34688856690" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/optica-galdakao-centro-optico/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="optica" data-ciudad="galdakao" data-nombre="opticalia galdakao">
+  <td>169</td>
+  <td><a href="/opticalia-galdakao/" target="_blank"><strong>Opticalia Galdakao</strong></a></td>
+  <td><span class="sec">Óptica</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:opticaliagaldakao@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/opticalia-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="outlet palsofa i tienda de sofás en liquidación en galdakao (bizkaia)">
+  <td>170</td>
+  <td><a href="/outlet-palsofa-i-tienda-de-sofas-en-liquidacion-en-galdakao-/" target="_blank"><strong>OUTLET PALSOFA I Tienda de Sofás en liquidación en Galdakao (Bizkaia)</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@palsofa.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/outlet-palsofa-i-tienda-de-sofas-en-liquidacion-en-galdakao-/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="academia" data-ciudad="galdakao" data-nombre="oxford language school | academia de inglés en galdakao">
+  <td>171</td>
+  <td><a href="/oxford-language-school-academia-de-ingles-en-galdakao/" target="_blank"><strong>Oxford Language School | Academia de Inglés en Galdakao</strong></a></td>
+  <td><span class="sec">Academia</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakao@oxfordls.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/oxford-language-school-academia-de-ingles-en-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="pasteleria-panaderia" data-ciudad="galdakao" data-nombre="panaderia bizkarra">
+  <td>172</td>
+  <td><a href="/panaderia-bizkarra/" target="_blank"><strong>Panaderia Bizkarra</strong></a></td>
+  <td><span class="sec">Panadería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:panaderia@bizkarra.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/panaderia-bizkarra/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="bilbao" data-nombre="peluqueria aminta">
+  <td>173</td>
+  <td><a href="/peluqueria-aminta/" target="_blank"><strong>Peluqueria Aminta</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Bilbao</td>
+  <td> <a href="https://wa.me/34679276664" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/peluqueria-aminta/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="galdakao" data-nombre="peluqueria javier">
+  <td>174</td>
+  <td><a href="/peluqueria-javier/" target="_blank"><strong>Peluqueria Javier</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:correo@peluqueriajavier.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/peluqueria-javier/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="pérez sáez farmazia">
+  <td>175</td>
+  <td><a href="/perez-saez-farmazia/" target="_blank"><strong>Pérez Sáez Farmazia</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:farmaciaperezsaez@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/perez-saez-farmazia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="pinturas nabartu galdakao">
+  <td>176</td>
+  <td><a href="/pinturas-nabartu-galdakao/" target="_blank"><strong>Pinturas Nabartu Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:amorebieta@pinturasnabartu.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/pinturas-nabartu-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="bizkaia" data-nombre="pizzerria piccola napoli mia">
+  <td>177</td>
+  <td><a href="/pizzerria-piccola-napoli-mia/" target="_blank"><strong>Pizzerria Piccola Napoli Mia</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34669054831" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/pizzerria-piccola-napoli-mia/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="clinica-dental" data-ciudad="galdakao" data-nombre="plus dental galdakao">
+  <td>178</td>
+  <td><a href="/plus-dental-galdakao/" target="_blank"><strong>Plus Dental Galdakao</strong></a></td>
+  <td><span class="sec">Dental</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:bilbao@clinicasplusdental.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/plus-dental-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="precal">
+  <td>179</td>
+  <td><a href="/precal/" target="_blank"><strong>Precal</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@precalsa.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/precal/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="printhaus s.l.">
+  <td>180</td>
+  <td><a href="/printhaus-s-l/" target="_blank"><strong>PRINTHAUS S.L.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:lopd@printhaus.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/printhaus-s-l/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="productos gallegos fernández - galdakao">
+  <td>181</td>
+  <td><a href="/productos-gallegos-fernandez-galdakao/" target="_blank"><strong>Productos Gallegos Fernández - Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@comerciallagallega.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/productos-gallegos-fernandez-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="psicologia" data-ciudad="galdakao" data-nombre="psicología galdakao">
+  <td>182</td>
+  <td><a href="/psicologia-galdakao/" target="_blank"><strong>PSICOLOGÍA GALDAKAO</strong></a></td>
+  <td><span class="sec">Psicología</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:matt@pixelspread.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/psicologia-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="psicólogo rakel villanueva">
+  <td>183</td>
+  <td><a href="/psicologo-rakel-villanueva/" target="_blank"><strong>Psicólogo Rakel Villanueva</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:villanuevarakel@gmail.com">✉️</a> <a href="https://wa.me/34617 14 27 88" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/psicologo-rakel-villanueva/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="bilbao" data-nombre="rio-oja restaurante">
+  <td>184</td>
+  <td><a href="/rio-oja-restaurante/" target="_blank"><strong>Rio-Oja Restaurante</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Bilbao</td>
+  <td><a href="mailto:Raul@ggelcano.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/rio-oja-restaurante/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="roquechar">
+  <td>185</td>
+  <td><a href="/roquechar/" target="_blank"><strong>Roquechar</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:robertoroquechar@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/roquechar/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="rural kutxa">
+  <td>186</td>
+  <td><a href="/rural-kutxa/" target="_blank"><strong>Rural Kutxa</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@ruralkutxa.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/rural-kutxa/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="saltoki">
+  <td>187</td>
+  <td><a href="/saltoki/" target="_blank"><strong>Saltoki</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:atencionalcliente@saltoki.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/saltoki/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="saludavida herboristería galdakao">
+  <td>188</td>
+  <td><a href="/saludavida-herboristeria-galdakao/" target="_blank"><strong>Saludavida Herboristería Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:saludavida@saludavida.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/saludavida-herboristeria-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="san jose &amp; velasco asesores s.l.">
+  <td>189</td>
+  <td><a href="/san-jose-velasco-asesores-s-l/" target="_blank"><strong>San Jose &amp; Velasco Asesores S.L.</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:sanjosevelasco@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/san-jose-velasco-asesores-s-l/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="seguros ocaso">
+  <td>190</td>
+  <td><a href="/seguros-ocaso/" target="_blank"><strong>Seguros Ocaso</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:proteccion_datos@ocaso.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/seguros-ocaso/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="serigrafía serkovi">
+  <td>191</td>
+  <td><a href="/serigrafia-serkovi/" target="_blank"><strong>Serigrafía Serkovi</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:manoli@serkovi.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/serigrafia-serkovi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="servigraf vizcaya">
+  <td>192</td>
+  <td><a href="/servigraf-vizcaya/" target="_blank"><strong>Servigraf Vizcaya</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:servigraf@servigraf.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/servigraf-vizcaya/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="galdakao" data-nombre="settimo cielo">
+  <td>193</td>
+  <td><a href="/settimo-cielo/" target="_blank"><strong>Settimo Cielo</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:settimo.cielo85@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/settimo-cielo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="skatepark galdakao ( la kubierta skate eskola )">
+  <td>194</td>
+  <td><a href="/skatepark-galdakao-la-kubierta-skate-eskola/" target="_blank"><strong>Skatepark Galdakao ( La Kubierta skate eskola )</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:skategdko@gmail.com">✉️</a> <a href="https://wa.me/34614 51 83 93" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/skatepark-galdakao-la-kubierta-skate-eskola/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="stas iberica, sa">
+  <td>195</td>
+  <td><a href="/stas-iberica-sa/" target="_blank"><strong>STAS IBERICA, SA</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:stas@stasiberica.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/stas-iberica-sa/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="sugoi">
+  <td>196</td>
+  <td><a href="/sugoi/" target="_blank"><strong>Sugoi</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34722768416" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/sugoi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="sukha coworking | galdakao">
+  <td>197</td>
+  <td><a href="/sukha-coworking-galdakao/" target="_blank"><strong>Sukha Coworking | Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@sukhacoworking.es">✉️</a> <a href="https://wa.me/34607 73 10 71" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/sukha-coworking-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="bilbo" data-nombre="sustraiak catering vegano">
+  <td>198</td>
+  <td><a href="/sustraiak-catering-vegano/" target="_blank"><strong>Sustraiak Catering Vegano</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Bilbo</td>
+  <td> <a href="https://wa.me/34645046005" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/sustraiak-catering-vegano/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="tienda-ropa" data-ciudad="tomelloso" data-nombre="talenti man tomelloso">
+  <td>199</td>
+  <td><a href="/talenti-man-tomelloso/" target="_blank"><strong>Talenti Man Tomelloso</strong></a></td>
+  <td><span class="sec">Moda</span></td>
+  <td>Tomelloso</td>
+  <td><a href="mailto:talenti@talenti-jeans.com">✉️</a> <a href="https://wa.me/34644 85 39 47" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/talenti-man-tomelloso/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="taller-mecanico" data-ciudad="galdakao" data-nombre="taller 24 horas">
+  <td>200</td>
+  <td><a href="/taller-24-horas/" target="_blank"><strong>Taller 24 Horas</strong></a></td>
+  <td><span class="sec">Taller</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:taller24horas@outlook.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/taller-24-horas/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="tanatorio crematorio andra mari en galdakao - funeraria bilbaína - funeuskadi | mémora">
+  <td>201</td>
+  <td><a href="/tanatorio-crematorio-andra-mari-en-galdakao-funeraria-bilbai/" target="_blank"><strong>Tanatorio Crematorio Andra Mari en Galdakao - Funeraria Bilbaína - Funeuskadi | Mémora</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:datos@memora.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/tanatorio-crematorio-andra-mari-en-galdakao-funeraria-bilbai/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="taupadak dantza eskola galdakao">
+  <td>202</td>
+  <td><a href="/taupadak-dantza-eskola-galdakao/" target="_blank"><strong>Taupadak Dantza Eskola Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:soporte@webador.es">✉️</a> <a href="https://wa.me/34633 53 86 65" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/taupadak-dantza-eskola-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="bar-de-tapas" data-ciudad="bizkaia" data-nombre="tegobi bierhaus">
+  <td>203</td>
+  <td><a href="/tegobi-bierhaus/" target="_blank"><strong>Tegobi Bierhaus</strong></a></td>
+  <td><span class="sec">Bar</span></td>
+  <td>Bizkaia</td>
+  <td><a href="mailto:tegobi2015@gmail.com">✉️</a> <a href="https://wa.me/34688745094" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/tegobi-bierhaus/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="telepizza galdakao">
+  <td>204</td>
+  <td><a href="/telepizza-galdakao/" target="_blank"><strong>Telepizza Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:franquicias@fooddeliverybrands.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/telepizza-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="tienda de petardos cm galdakao">
+  <td>205</td>
+  <td><a href="/tienda-de-petardos-cm-galdakao/" target="_blank"><strong>Tienda de Petardos CM Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:petardoscm@petardoscm.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/tienda-de-petardos-cm-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="tipsa galdakano">
+  <td>206</td>
+  <td><a href="/tipsa-galdakano/" target="_blank"><strong>TIPSA GALDAKANO</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:galdakano@tip-sa.com">✉️</a> <a href="https://wa.me/34641 39 27 10" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/tipsa-galdakano/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="tuul etxea galdakao">
+  <td>207</td>
+  <td><a href="/tuul-etxea-galdakao/" target="_blank"><strong>Tuul Etxea Galdakao</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:ainhocrespo@gmail.com">✉️</a> <a href="https://wa.me/34674 04 14 38" target="_blank">💬</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/tuul-etxea-galdakao/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="txuringo">
+  <td>208</td>
+  <td><a href="/txuringo/" target="_blank"><strong>Txuringo</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34615753771" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/txuringo/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="restaurante" data-ciudad="bizkaia" data-nombre="unai taberna">
+  <td>209</td>
+  <td><a href="/unai-taberna/" target="_blank"><strong>Unai Taberna</strong></a></td>
+  <td><span class="sec">Restaurante</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34688763663" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/unai-taberna/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="unbe">
+  <td>210</td>
+  <td><a href="/unbe/" target="_blank"><strong>Unbe</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34668596175" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/unbe/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="uraburu golf">
+  <td>211</td>
+  <td><a href="/uraburu-golf/" target="_blank"><strong>Uraburu Golf</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:info@uraburugolf.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/uraburu-golf/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="taller-mecanico" data-ciudad="galdakao" data-nombre="urreta car">
+  <td>212</td>
+  <td><a href="/urreta-car/" target="_blank"><strong>Urreta Car</strong></a></td>
+  <td><span class="sec">Taller</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:urretacarsl@gmail.com">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/urreta-car/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="valle de trápaga-trapagaran" data-nombre="valley's barber">
+  <td>213</td>
+  <td><a href="/valley-s-barber/" target="_blank"><strong>Valley's Barber</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Valle de Trápaga-Trapagaran</td>
+  <td> <a href="https://wa.me/34688763425" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/valley-s-barber/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="cafeteria" data-ciudad="bizkaia" data-nombre="wall street">
+  <td>214</td>
+  <td><a href="/wall-street/" target="_blank"><strong>Wall Street</strong></a></td>
+  <td><span class="sec">Cafetería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34633338665" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/wall-street/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="taller-bicicletas" data-ciudad="barakaldo" data-nombre="zitibike">
+  <td>215</td>
+  <td><a href="/zitibike/" target="_blank"><strong>Zitibike</strong></a></td>
+  <td><span class="sec">Bicis</span></td>
+  <td>Barakaldo</td>
+  <td> <a href="https://wa.me/34644309767" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/zitibike/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="abogado-gestoria" data-ciudad="galdakao" data-nombre="zurich abandoibarra xxi">
+  <td>216</td>
+  <td><a href="/zurich-abandoibarra-xxi/" target="_blank"><strong>Zurich Abandoibarra XXI</strong></a></td>
+  <td><span class="sec">Servicios</span></td>
+  <td>Galdakao</td>
+  <td><a href="mailto:zurich@abandoibarra.es">✉️</a></td>
+  <td class="fuente places">Places</td>
+  <td><a href="/zurich-abandoibarra-xxi/" target="_blank" class="btn">Ver</a></td>
+</tr>
+<tr data-sector="peluqueria" data-ciudad="bizkaia" data-nombre="zuzeu">
+  <td>217</td>
+  <td><a href="/zuzeu/" target="_blank"><strong>Zuzeu</strong></a></td>
+  <td><span class="sec">Peluquería</span></td>
+  <td>Bizkaia</td>
+  <td> <a href="https://wa.me/34695470157" target="_blank">💬</a></td>
+  <td class="fuente osm">OSM</td>
+  <td><a href="/zuzeu/" target="_blank" class="btn">Ver</a></td>
+</tr>
+  </tbody>
+</table>
+</div>
+<script>
+const q = document.getElementById('q');
+const sec = document.getElementById('sector');
+const ciu = document.getElementById('ciudad');
+const tb = document.getElementById('tb');
+const count = document.getElementById('count');
+const rows = Array.from(tb.querySelectorAll('tr'));
+
+function filter(){
+  const qv = q.value.toLowerCase().trim();
+  const sv = sec.value;
+  const cv = ciu.value;
+  let shown = 0;
+  rows.forEach(r => {
+    const matchQ = !qv || r.dataset.nombre.includes(qv);
+    const matchS = !sv || r.dataset.sector === sv;
+    const matchC = !cv || r.dataset.ciudad === cv;
+    const ok = matchQ && matchS && matchC;
+    r.classList.toggle('hidden', !ok);
+    if (ok) shown++;
+  });
+  count.textContent = shown;
+}
+function clearFilters(){ q.value=''; sec.value=''; ciu.value=''; filter(); }
+q.addEventListener('input', filter);
+sec.addEventListener('change', filter);
+ciu.addEventListener('change', filter);
+</script>
+</body></html>
