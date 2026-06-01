@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óptica Urzay · Mungia | Cuidamos tu visión desde 1992</title>
+<meta name="description" content="Óptica Urzay en Mungia (Bizkaia). Centro especializado en lentes de contacto y progresivas. Gafas graduadas, gafas de sol, examen visual y control de miopía. +30 años cuidando tu visión.">
+<meta name="theme-color" content="#1c3b5a">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Óptica Urzay · Mungia | Cuidamos tu visión">
+<meta property="og:description" content="Centro especializado en lentes de contacto y progresivas en Mungia. +30 años de experiencia. Examen visual, gafas graduadas y de sol.">
+<meta property="og:image" content="https://ggeelcano.github.io/optica-urzay/img/urzay-2.jpg">
+<meta property="og:url" content="https://ggeelcano.github.io/optica-urzay/">
+<meta property="og:locale" content="es_ES">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#1c3b5a;
+  --navy-deep:#142b42;
+  --gold:#c9a14a;
+  --gold-soft:#e2c882;
+  --bg:#fbfaf7;
+  --ink:#1f2937;
+  --muted:#5d6b7a;
+  --line:#e7e2d8;
+  --white:#ffffff;
+  --radius:16px;
+  --shadow:0 18px 50px -22px rgba(20,43,66,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.eyebrow{font-family:'Inter';font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold-soft);display:grid;place-items:center;font-family:'Fraunces';font-size:1.25rem;font-weight:700;box-shadow:inset 0 0 0 2px rgba(226,200,130,.35)}
+.brand b{font-family:'Fraunces';font-size:1.3rem;font-weight:600;letter-spacing:.04em;color:var(--navy)}
+.brand small{display:block;font-family:'Inter';font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:-3px}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{font-size:.92rem;font-weight:500;color:var(--ink);transition:color .2s}
+.menu a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--navy);color:#fff;padding:12px 22px;border-radius:50px;font-weight:600;font-size:.9rem;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{background:var(--navy-deep);transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(20,43,66,.6)}
+.btn.gold{background:var(--gold);color:var(--navy-deep)}
+.btn.gold:hover{background:var(--gold-soft)}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:84px 0 72px}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.85rem);color:var(--navy)}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:1.16rem;color:var(--muted);margin:22px 0 30px;max-width:46ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-media{position:relative}
+.hero-media img{width:100%;height:480px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}
+.hero-badge{position:absolute;left:-22px;bottom:34px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px}
+.hero-badge .stars{color:var(--gold);font-size:1.05rem;letter-spacing:1px}
+.hero-badge b{font-family:'Fraunces';font-size:1.5rem;color:var(--navy);display:block;line-height:1}
+.hero-badge small{font-size:.74rem;color:var(--muted)}
+.hero-deco{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(201,161,74,.16),transparent 70%);top:-90px;right:-60px;z-index:-1}
+
+/* ---------- TRUST STRIP ---------- */
+.trust{background:var(--navy);color:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;padding:30px 0}
+.trust .item{display:flex;align-items:center;gap:15px}
+.trust .ic{font-size:1.7rem}
+.trust b{font-family:'Fraunces';font-size:1.18rem;display:block;line-height:1.2}
+.trust small{color:#b8c6d4;font-size:.84rem}
+
+/* ---------- SECTIONS ---------- */
+section{padding:84px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 52px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--navy);margin:14px 0 12px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* services cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .28s,box-shadow .28s}
+.card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.card .ph{height:185px;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.07)}
+.card .body{padding:22px 22px 26px}
+.card h3{font-size:1.22rem;color:var(--navy);margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* feature split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split.rev .txt{order:2}
+.split img{width:100%;height:440px;object-fit:cover;border-radius:22px;box-shadow:var(--shadow)}
+.split h2{font-size:clamp(1.8rem,3.6vw,2.4rem);color:var(--navy);margin:14px 0 18px}
+.split p{color:var(--muted);margin-bottom:16px}
+.checklist{list-style:none;margin:22px 0 28px;display:grid;gap:13px}
+.checklist li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+.checklist .tk{flex:none;width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-size:.8rem;font-weight:700;margin-top:2px}
+
+/* salud visual band */
+.band{background:linear-gradient(135deg,var(--navy),var(--navy-deep));color:#fff}
+.band .sec-head h2{color:#fff}
+.band .sec-head p{color:#c3d0dd}
+.svc-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px 24px;transition:background .25s,transform .25s}
+.svc:hover{background:rgba(255,255,255,.12);transform:translateY(-4px)}
+.svc .n{font-family:'Fraunces';font-size:1.6rem;color:var(--gold-soft);display:block;margin-bottom:10px}
+.svc h3{font-size:1.12rem;margin-bottom:7px}
+.svc p{color:#c3d0dd;font-size:.9rem}
+
+/* brands */
+.brands{display:flex;flex-wrap:wrap;gap:18px 46px;justify-content:center;align-items:center}
+.brands span{font-family:'Fraunces';font-size:1.4rem;color:var(--muted);opacity:.8;letter-spacing:.03em;transition:opacity .25s,color .25s}
+.brands span:hover{opacity:1;color:var(--navy)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:46px;align-items:stretch}
+.info-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+.info-row{display:flex;gap:15px;padding:15px 0;border-bottom:1px solid var(--line)}
+.info-row:last-child{border:0}
+.info-row .ic{flex:none;width:42px;height:42px;border-radius:11px;background:#f3eede;color:var(--navy);display:grid;place-items:center;font-size:1.15rem}
+.info-row b{display:block;color:var(--navy);font-family:'Inter';font-weight:600;font-size:.95rem}
+.info-row span{color:var(--muted);font-size:.93rem}
+.hours{margin-top:6px;font-size:.9rem}
+.hours div{display:flex;justify-content:space-between;padding:4px 0;color:var(--muted)}
+.hours div b{color:var(--ink);font-weight:600}
+.hours .closed{color:#b04a4a}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:430px}
+.map iframe{width:100%;height:100%;min-height:430px;border:0;display:block}
+
+/* CTA final */
+.finalcta{background:var(--gold);color:var(--navy-deep);text-align:center}
+.finalcta h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:14px}
+.finalcta p{font-size:1.1rem;max-width:54ch;margin:0 auto 28px;color:#5e4f2a}
+
+/* footer */
+footer{background:var(--navy-deep);color:#aebccb;padding:56px 0 26px;font-size:.9rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-grid h4{color:#fff;font-family:'Fraunces';font-size:1.1rem;margin-bottom:16px}
+.foot-grid a{display:block;padding:5px 0;color:#aebccb;transition:color .2s}
+.foot-grid a:hover{color:var(--gold-soft)}
+.foot-brand b{font-family:'Fraunces';font-size:1.5rem;color:#fff;letter-spacing:.04em}
+.foot-brand p{margin-top:12px;max-width:34ch}
+.foot-bottom{text-align:center;padding-top:24px;font-size:.82rem;color:#7c8ca0}
+
+@media(max-width:920px){
+  .hero-grid,.split,.contact-grid{grid-template-columns:1fr;gap:38px}
+  .split.rev .txt{order:0}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .svc-list{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr;gap:18px}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .menu{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:#fff;padding:22px;gap:18px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .menu.open{display:flex}
+  .menu-toggle{display:block}
+  .hero-media img{height:340px}
+  .hero-badge{left:0}
+}
+@media(max-width:540px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <div class="mark">ʊ</div>
+      <div><b>URZAY</b><small>Óptica · Mungia</small></div>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#salud">Salud visual</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="tel:+34946155888" class="btn gold">Pide tu cita</a>
+    </nav>
+    <button class="menu-toggle" id="toggle" aria-label="Menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1c3b5a" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio" style="padding:0">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Centro óptico en Mungia · desde 1992</span>
+      <h1>Cuidamos <span>tu visión</span> con experiencia y cercanía</h1>
+      <p class="lead">Más de 30 años acompañando a las familias de Mungia. Centro especializado en lentes de contacto y progresivas, con examen visual completo y atención personalizada.</p>
+      <div class="hero-cta">
+        <a href="tel:+34946155888" class="btn gold">📅 Reserva tu cita</a>
+        <a href="#servicios" class="btn ghost">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-deco"></div>
+      <img src="img/urzay-2.jpg" alt="Fachada de Óptica Urzay en la calle Butroi de Mungia">
+      <div class="hero-badge">
+        <div>
+          <span class="stars">★★★★★</span>
+          <b>5,0</b>
+        </div>
+        <small>Valoración<br>en Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><span class="ic">👓</span><div><b>+30 años</b><small>cuidando la visión de Mungia</small></div></div>
+    <div class="item"><span class="ic">🔬</span><div><b>Centro especializado</b><small>lentes de contacto y progresivas</small></div></div>
+    <div class="item"><span class="ic">⭐</span><div><b>5,0 en Google</b><small>la confianza de nuestros clientes</small></div></div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Lo que ofrecemos</span>
+      <h2>Soluciones para cada mirada</h2>
+      <p>Desde tus gafas de diario hasta la adaptación de lentillas, te asesoramos para encontrar exactamente lo que necesitas.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="img/urzay-4.jpg" alt="Gafas graduadas en Óptica Urzay"></div>
+        <div class="body"><h3>Gafas graduadas</h3><p>Amplia selección de monturas y cristales de las mejores marcas, adaptadas a tu graduación y a tu estilo.</p></div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/urzay-7.jpg" alt="Gafas de sol graduadas y progresivas"></div>
+        <div class="body"><h3>Gafas de sol</h3><p>Protege tu vista con diseño. Gafas de sol de marca, con opción graduada y lentes progresivas.</p></div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/urzay-6.jpg" alt="Lentes de contacto Air Optix en Óptica Urzay"></div>
+        <div class="body"><h3>Lentes de contacto</h3><p>Centro especializado en adaptación de lentillas. Te enseñamos a usarlas con total seguridad.</p></div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/urzay-3.jpg" alt="Lentes progresivas en Óptica Urzay"></div>
+        <div class="body"><h3>Lentes progresivas</h3><p>Especialistas en progresivas de última generación para ver bien a todas las distancias.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SALUD VISUAL BAND -->
+<section class="band" id="salud">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:var(--gold-soft)">Tu salud visual, lo primero</span>
+      <h2>Mucho más que vender gafas</h2>
+      <p>Cuidamos tu visión con pruebas precisas y un seguimiento cercano en cada etapa de tu vida.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc"><span class="n">01</span><h3>Examen visual completo</h3><p>Medimos tu agudeza y salud ocular con equipos optométricos modernos para una graduación exacta.</p></div>
+      <div class="svc"><span class="n">02</span><h3>Control de miopía</h3><p>Soluciones especializadas para frenar el avance de la miopía, especialmente en los más jóvenes.</p></div>
+      <div class="svc"><span class="n">03</span><h3>Adaptación de lentillas</h3><p>Primera adaptación y revisiones periódicas para que tus lentes de contacto sean cómodas y seguras.</p></div>
+      <div class="svc"><span class="n">04</span><h3>Revisión de la vista</h3><p>Revisiones de control para detectar a tiempo cualquier cambio en tu visión.</p></div>
+      <div class="svc"><span class="n">05</span><h3>Asesoramiento personalizado</h3><p>Te ayudamos a elegir la montura y el cristal que mejor encajan con tu día a día.</p></div>
+      <div class="svc"><span class="n">06</span><h3>Servicio postventa</h3><p>Ajustes, reparaciones y mantenimiento de tus gafas siempre que lo necesites.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS SPLIT -->
+<section id="nosotros">
+  <div class="wrap split">
+    <div class="txt">
+      <span class="eyebrow">Quiénes somos</span>
+      <h2>Una óptica de Mungia, de toda la vida</h2>
+      <p>Desde 1992, Óptica Urzay es un referente de confianza en el corazón de Mungia. Tres décadas de experiencia que se notan en cada examen, en cada consejo y en el trato cercano que nos define.</p>
+      <ul class="checklist">
+        <li><span class="tk">✓</span><div><b>Atención personal y familiar</b> — te conocemos por tu nombre, no por un número.</div></li>
+        <li><span class="tk">✓</span><div><b>Profesionales colegiados</b> con formación continua y equipos actualizados.</div></li>
+        <li><span class="tk">✓</span><div><b>Centro especializado</b> en lentes de contacto y progresivas.</div></li>
+      </ul>
+      <a href="#contacto" class="btn">Conócenos en persona</a>
+    </div>
+    <div><img src="img/urzay-5.jpg" alt="Gabinete de optometría de Óptica Urzay con equipos de examen visual"></div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section style="padding:56px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <p style="text-align:center;color:var(--muted);font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:26px">Trabajamos con marcas de confianza</p>
+    <div class="brands">
+      <span>INDO</span><span>Air Optix</span><span>Alcon</span><span>Tom Tailor</span><span>Hickmann</span><span>Systane</span><span>Varilux</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Visítanos</span>
+      <h2>Estamos en el centro de Mungia</h2>
+      <p>Pásate por la calle Butroi o llámanos para reservar tu cita. Te esperamos.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="info-card">
+        <div class="info-row"><span class="ic">📍</span><div><b>Dirección</b><span>Butroi Kalea, 9 · 48100 Mungia (Bizkaia)</span></div></div>
+        <div class="info-row"><span class="ic">📞</span><div><b>Teléfono</b><span><a href="tel:+34946155888" style="color:var(--gold);font-weight:600">946 15 58 88</a></span></div></div>
+        <div class="info-row"><span class="ic">🕑</span><div style="flex:1"><b>Horario</b>
+          <div class="hours">
+            <div><span>Lunes a viernes</span><b>9:30–13:30 · 16:30–19:30</b></div>
+            <div><span>Sábado</span><b>10:00–13:30</b></div>
+            <div class="closed"><span>Domingo</span><b class="closed">Cerrado</b></div>
+          </div>
+        </div></div>
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="tel:+34946155888" class="btn gold">Llamar ahora</a>
+          <a href="https://maps.google.com/?q=Óptica+Urzay+Mungia" target="_blank" rel="noopener" class="btn ghost">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Óptica+Urzay,Butroi+Kalea+9,Mungia&zoom=17"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="finalcta">
+  <div class="wrap">
+    <h2>¿Hace cuánto que no revisas tu vista?</h2>
+    <p>Reserva tu examen visual en Óptica Urzay. Sin prisas, con la atención cercana de siempre.</p>
+    <a href="tel:+34946155888" class="btn" style="background:var(--navy-deep)">📅 Pide tu cita · 946 15 58 88</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>ÓPTICA URZAY</b>
+        <p>Cuidando la visión de Mungia desde 1992. Centro especializado en lentes de contacto y progresivas.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#salud">Salud visual</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://maps.google.com/?q=Óptica+Urzay+Mungia" target="_blank" rel="noopener">Butroi Kalea, 9 · Mungia</a>
+        <a href="tel:+34946155888">946 15 58 88</a>
+        <a href="#inicio">Lun–Vie 9:30–13:30 · 16:30–19:30</a>
+        <a href="#inicio">Sáb 10:00–13:30</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Óptica Urzay · Mungia (Bizkaia) · Todos los derechos reservados</div>
+  </div>
+</footer>
+
+<script>
+  const t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',()=>m.classList.toggle('open'));
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.classList.remove('open')));
+</script>
+</body>
+</html>
