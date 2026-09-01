@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unicorn Copas · Bar de copas y música en Arganzuela, Madrid</title>
+<meta name="description" content="Bar de copas y música en la calle Moreno Nieto 19, Arganzuela (Madrid). Abierto todos los días de 20:00 a 3:30. Buen ambiente, buena música y copas a buen precio.">
+<meta property="og:title" content="Unicorn Copas · Arganzuela, Madrid">
+<meta property="og:description" content="Copas y música todos los días de 20:00 a 3:30. C. de Moreno Nieto, 19 — junto a Madrid Río.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/place-photos/AG9NLjBIX2cpo4RWSXPJPiO0BGRY8ELnlut9yVNUKt3JSzAcrkuSRF3YZF6P7vNF6QbGUw_F0GggCEdvMLBXyZRCJcFY-uN8ffslEoWsBYFTUi4QIRy9O__sLscxwRvVGGxhhmctPx3qEHlylefNrsM=s800">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+:root{
+  --noche:#100a14;
+  --sala:#1a1220;
+  --sala-2:#221729;
+  --tinta:#f2ecf4;
+  --tinta-suave:#b3a5ba;
+  --neon:#ff4d9e;
+  --neon-suave:#ff7ab8;
+  --ambar:#e5a04c;
+  --linea:#332440;
+  --display:"Tilt Neon","Trebuchet MS",sans-serif;
+  --cuerpo:"Karla","Segoe UI",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--noche);
+  color:var(--tinta);
+  font-family:var(--cuerpo);
+  font-size:1.0625rem;
+  line-height:1.65;
+}
+.skip{position:absolute;left:-9999px;top:0;background:var(--neon);color:#1a0510;padding:.6rem 1rem;z-index:99;border-radius:0 0 8px 0;font-weight:700}
+.skip:focus{left:0}
+a{color:var(--neon-suave)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ambar);outline-offset:3px}
+img{max-width:100%;display:block}
+
+/* ---------- Nav ---------- */
+header.top{
+  position:sticky;top:0;z-index:50;
+  background:rgba(16,10,20,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--linea);
+}
+.top-inner{
+  max-width:1060px;margin:0 auto;padding:.7rem 1.25rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.marca{font-family:var(--display);font-size:1.25rem;color:var(--neon);text-decoration:none;letter-spacing:.02em;white-space:nowrap}
+nav.principal ul{display:flex;gap:1.4rem;list-style:none}
+nav.principal a{color:var(--tinta-suave);text-decoration:none;font-size:.95rem;font-weight:500}
+nav.principal a:hover{color:var(--tinta)}
+@media (max-width:640px){nav.principal{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:88vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:4rem 1.25rem 3.5rem;position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 20%, rgba(255,77,158,.14), transparent 65%),
+    radial-gradient(ellipse 55% 45% at 80% 85%, rgba(229,160,76,.10), transparent 70%),
+    var(--noche);
+}
+.hero .abierto{
+  display:inline-flex;align-items:center;gap:.5rem;
+  border:1px solid var(--linea);border-radius:999px;
+  padding:.35rem 1rem;font-size:.85rem;color:var(--tinta-suave);
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.8rem;
+}
+.hero .abierto .punto{width:8px;height:8px;border-radius:50%;background:var(--ambar);box-shadow:0 0 8px var(--ambar)}
+.hero h1{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(3rem,12vw,6.5rem);
+  line-height:1.02;color:var(--neon);
+  text-shadow:0 0 18px rgba(255,77,158,.55),0 0 60px rgba(255,77,158,.28);
+  text-wrap:balance;
+}
+.hero h1 span{display:block;font-size:clamp(1.4rem,5vw,2.6rem);color:var(--tinta);text-shadow:none;margin-top:.35rem;letter-spacing:.14em}
+.hero .lema{max-width:34rem;margin:1.6rem auto 0;color:var(--tinta-suave);font-size:1.1rem}
+.hero .horario-hero{margin-top:1.4rem;font-size:1.05rem;color:var(--ambar);font-weight:700;letter-spacing:.03em}
+.acciones{display:flex;gap:.9rem;flex-wrap:wrap;justify-content:center;margin-top:2.2rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.85rem 1.7rem;border-radius:999px;
+  text-decoration:none;font-weight:700;font-size:1rem;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn svg{flex:none}
+.btn-neon{background:var(--neon);color:#20060f;box-shadow:0 0 22px rgba(255,77,158,.4)}
+.btn-neon:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(255,77,158,.6)}
+.btn-borde{border:1.5px solid var(--linea);color:var(--tinta)}
+.btn-borde:hover{border-color:var(--neon);transform:translateY(-2px)}
+
+/* ---------- Secciones ---------- */
+section{padding:4.5rem 1.25rem}
+.contenedor{max-width:1060px;margin:0 auto}
+.etiqueta{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ambar);font-weight:700}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,5vw,2.5rem);color:var(--tinta);margin:.4rem 0 1.2rem;text-wrap:balance}
+.intro{max-width:38rem;color:var(--tinta-suave)}
+
+/* La casa */
+.casa{background:var(--sala)}
+.casa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem;margin-top:2.2rem}
+.tarjeta{
+  background:var(--sala-2);border:1px solid var(--linea);border-radius:14px;
+  padding:1.5rem 1.4rem;
+}
+.tarjeta h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--neon-suave)}
+.tarjeta p{color:var(--tinta-suave);font-size:.98rem}
+
+/* Galería */
+.galeria-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.9rem;margin-top:2.2rem}
+.galeria-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid var(--linea)}
+
+/* Reseñas */
+.resenas{background:var(--sala)}
+.resenas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;margin-top:2.2rem}
+.resena{background:var(--sala-2);border:1px solid var(--linea);border-radius:14px;padding:1.5rem 1.4rem;display:flex;flex-direction:column;gap:.8rem}
+.resena .estrellas{color:var(--ambar);letter-spacing:.15em;font-size:.95rem}
+.resena blockquote{color:var(--tinta);font-size:.98rem;font-style:italic}
+.resena footer{color:var(--tinta-suave);font-size:.88rem}
+.nota-google{margin-top:1.6rem;color:var(--tinta-suave);font-size:.92rem}
+.nota-google strong{color:var(--ambar)}
+
+/* Horario y mapa */
+.donde-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;margin-top:2.2rem;align-items:start}
+@media (max-width:760px){.donde-grid{grid-template-columns:1fr}}
+.horario-tabla{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horario-tabla td{padding:.55rem 0;border-bottom:1px solid var(--linea);color:var(--tinta-suave)}
+.horario-tabla td:last-child{text-align:right;color:var(--tinta);font-weight:700}
+.dato{margin-top:1.4rem;color:var(--tinta-suave)}
+.dato strong{color:var(--tinta)}
+.mapa{border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+.mapa iframe{display:block;width:100%;height:340px;border:0}
+
+/* CTA final */
+.cierre{text-align:center;background:
+  radial-gradient(ellipse 60% 70% at 50% 100%, rgba(255,77,158,.12), transparent 70%),
+  var(--noche)}
+.cierre p{max-width:32rem;margin:0 auto 1.8rem;color:var(--tinta-suave)}
+
+footer.pie{border-top:1px solid var(--linea);padding:2rem 1.25rem;text-align:center;color:var(--tinta-suave);font-size:.9rem}
+footer.pie .marca{display:inline-block;margin-bottom:.4rem}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.btn:hover{transition:none;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="marca" href="#">Unicorn Copas</a>
+    <nav class="principal" aria-label="Principal">
+      <ul>
+        <li><a href="#la-casa">La casa</a></li>
+        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#donde">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-neon" style="padding:.5rem 1.1rem;font-size:.9rem" href="https://wa.me/34629182904" aria-label="Escríbenos por WhatsApp">WhatsApp</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="hero" aria-label="Presentación">
+  <p class="abierto"><span class="punto" aria-hidden="true"></span> Abierto todos los días</p>
+  <h1>Unicorn <span>copas &amp; música</span></h1>
+  <p class="lema">Tu bar de copas de Arganzuela. Buena música, buen precio y mejor compañía, a un paso de Madrid Río.</p>
+  <p class="horario-hero">Todos los días · 20:00 – 3:30</p>
+  <div class="acciones">
+    <a class="btn btn-neon" href="https://wa.me/34629182904?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Unicorn%20Copas">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.5Z"/></svg>
+      Escríbenos por WhatsApp
+    </a>
+    <a class="btn btn-borde" href="tel:+34629182904">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+      629 18 29 04
+    </a>
+  </div>
+</section>
+
+<section class="casa" id="la-casa">
+  <div class="contenedor">
+    <p class="etiqueta">La casa</p>
+    <h2>Un bar de barrio, de los de verdad</h2>
+    <p class="intro">Detrás de la barra estamos Eduardo y Noelia, padre e hija. Aquí se viene a tomar algo tranquilo, a charlar y a escuchar buena música hasta bien entrada la noche. Sin postureo y sin prisa.</p>
+    <div class="casa-grid">
+      <article class="tarjeta">
+        <h3>Copas a buen precio</h3>
+        <p>Combinados bien servidos, cervezas frías y precios de barrio. Lo dicen nuestros clientes en Google: aquí se toma bien sin dejarse el sueldo.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>La música la pones tú</h3>
+        <p>Clásicos de los 80 y 90, y lo que apetezca esa noche. ¿Tienes una canción en mente? Pídela, que suena.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Zona reservada</h3>
+        <p>Un espacio aparte para grupos, cumpleaños o celebraciones con más intimidad. Pregúntanos por WhatsApp y te lo guardamos.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Hasta las 3:30, cada día</h3>
+        <p>Abrimos todos los días a las 20:00 y cerramos a las 3:30 de la mañana. Cuando el resto del barrio cierra, nosotros seguimos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="contenedor">
+    <p class="etiqueta">Fotos</p>
+    <h2>Así es Unicorn</h2>
+    <div class="galeria-grid">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBIX2cpo4RWSXPJPiO0BGRY8ELnlut9yVNUKt3JSzAcrkuSRF3YZF6P7vNF6QbGUw_F0GggCEdvMLBXyZRCJcFY-uN8ffslEoWsBYFTUi4QIRy9O__sLscxwRvVGGxhhmctPx3qEHlylefNrsM=s800" alt="Interior de Unicorn Copas" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBmYdXl-Nj24d_FqTXe7EWDQHh5neXwhnqIX9rkR-Be09p9IsEF_mgRNCuH7fvDP6i73OAiPysGqvUCoHLUmRsunVXItAgKgO5kzx9-7lWMRji3RhL6gFEJFSzEvijmIiWUzilAaUWVcGWJ2es=s800" alt="Ambiente nocturno en Unicorn Copas" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDeEeLDFwhCocMtni8i_057FQkvj4pqg_Eo76WhGUSU3DuWrTnOczSs_q6JKBHUEKZwsNl_k9yilsfR1WWerYVU2dbFhi-Po0E1H1lP2SN1HfkFfvWjp960i1dbMgl9obZZ9U3phAd_5RrZjQ=s800" alt="Detalle del local Unicorn Copas" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCoimj5J2iCoHk6sAhQbkFQrqkFeuX83HoPTRJbCIpH96rD7ughwbKbtMM1RfEvMxSYzxaw3T9ev8Z4AEgr1NYBAi-YNkcRYmCXtJc9mkIcL48QKS8QeGLu-f_etXzGhVHUmqMB3Q2teHc7=s800" alt="Barra de Unicorn Copas" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="resenas" id="opiniones">
+  <div class="contenedor">
+    <p class="etiqueta">Opiniones</p>
+    <h2>Lo que dice la gente</h2>
+    <div class="resenas-grid">
+      <article class="resena">
+        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+        <blockquote>«Local de copas especial, donde quedamos los amigos a pasar un buen rato, con buena música y un trato exquisito por parte de los propietarios. Y los dueños, lo mejor.»</blockquote>
+        <footer>M. R. G. · reseña de Google</footer>
+      </article>
+      <article class="resena">
+        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+        <blockquote>«Bar de copas del barrio, puedes poner la música que quieras, buen ambiente y los dueños majísimos.»</blockquote>
+        <footer>Sara O. · reseña de Google</footer>
+      </article>
+      <article class="resena">
+        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+        <blockquote>«Es un lugar precioso, los dueños muy simpáticos y agradables, las copas son baratas. Lo recomiendo.»</blockquote>
+        <footer>María S. · reseña de Google</footer>
+      </article>
+    </div>
+    <p class="nota-google">Valoración <strong>4,5 ★</strong> en Google.</p>
+  </div>
+</section>
+
+<section id="donde">
+  <div class="contenedor">
+    <p class="etiqueta">Dónde estamos</p>
+    <h2>Horario y cómo llegar</h2>
+    <div class="donde-grid">
+      <div>
+        <table class="horario-tabla">
+          <caption class="etiqueta" style="text-align:left;padding-bottom:.6rem">Horario</caption>
+          <tbody>
+            <tr><td>Lunes a domingo</td><td>20:00 – 3:30</td></tr>
+          </tbody>
+        </table>
+        <p class="dato"><strong>Dirección:</strong> C. de Moreno Nieto, 19<br>Arganzuela · 28005 Madrid</p>
+        <p class="dato"><strong>Metro:</strong> Puerta del Ángel / Príncipe Pío, a un paseo por Madrid Río.</p>
+        <p class="dato"><strong>Teléfono:</strong> <a href="tel:+34629182904">629 18 29 04</a></p>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa de Unicorn Copas en Google Maps" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:ChIJJeEPflYnQg0RtAGnjmOpf30&zoom=17"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre">
+  <p class="etiqueta">Esta noche</p>
+  <h2>Te esperamos en la barra</h2>
+  <p>¿Un grupo grande, una celebración o simplemente unas copas tranquilas? Escríbenos y te lo preparamos.</p>
+  <div class="acciones">
+    <a class="btn btn-neon" href="https://wa.me/34629182904?text=Hola%2C%20quiero%20reservar%20en%20Unicorn%20Copas">Reservar por WhatsApp</a>
+    <a class="btn btn-borde" href="https://maps.google.com/?q=Unicorn+Copas,+Calle+de+Moreno+Nieto+19,+Madrid">Cómo llegar</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <a class="marca" href="#">Unicorn Copas</a><br>
+  C. de Moreno Nieto, 19 · Arganzuela · 28005 Madrid · <a href="tel:+34629182904">629 18 29 04</a>
+</footer>
+
+</body>
+</html>
